@@ -15,10 +15,20 @@ body {
 /* Reset styles */
   ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
   }
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+img {
+    display: block;
+}
+
+h1,h2,h3,h5,h5,h6,p {
+    margin: 0;
 }
 
 button{
@@ -47,12 +57,55 @@ button{
     letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Container */
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+       
+}
+
 /* PAGE HEADER */
 
 
-.header {}
+.header {
+        
+}
 
-.header-nav {}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-span {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    padding-right: 76px;
+}
 
 .header-logo {
     color: #4D5AE5;
@@ -75,12 +128,14 @@ button{
 
 .nav-link {
     font-weight: 500;
+    color: #2e2f42;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.nav-link{
-    color:#2e2f42;
+    display: flex;
+    padding: 24px 0;
+    gap: 40px;
+    padding-right: 332px;
+    align-items: center;
 }
 
 .nav-link-item:hover,
@@ -98,9 +153,15 @@ button{
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
-.adress-link {}
+.adress-link {
+    display: flex;
+    padding: 24px 0;
+    gap: 40px;
+}
 
 /* HERO SECTION */
 
@@ -110,6 +171,9 @@ button{
     background:#2E2F42;
 }
 
+.hero-page{
+}
+
 .hero-title {
     color:#FFF;
     text-align: center;
@@ -117,6 +181,8 @@ button{
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0px 310px 48px;
+    padding-top: 188px;
 }
 
 .hero-button {
@@ -125,7 +191,13 @@ button{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    margin: 0 480px 188px;
+    white-space: nowrap;
 }
 .hero-button:focus,
 .hero-button:hover
@@ -141,9 +213,15 @@ button{
     color:#2e2f42;
 }
 
-.benefits-list {}
+.benefits-list {
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+}
 
-.benefits-item-title {}
+.benefits-item-title {
+    margin-bottom: 8px;
+}
 
 .benefits-title-text {}
 

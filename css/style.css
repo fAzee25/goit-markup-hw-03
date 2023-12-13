@@ -344,9 +344,7 @@ button{
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    
+ 
 }
 
 .footer-logo {

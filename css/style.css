@@ -340,14 +340,13 @@ button{
 
 .footer {
     background:#2E2F42;
+    padding: 100px 0;
 }
 
 .footer-container {
-    padding-top: 101.5px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    
 }
 
 .footer-logo 
@@ -359,7 +358,6 @@ button{
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        display: inline-block;
         margin-bottom: 16px;
     }
 .footer-logo-span {
@@ -377,4 +375,7 @@ button{
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+}
+.footer a {
+        display: inline-block;
 }
